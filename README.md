@@ -1,2 +1,2 @@
-# project-template
-template with basic files and configurations for future projects
+# Image carousels and drop down menus
+using js css and html
