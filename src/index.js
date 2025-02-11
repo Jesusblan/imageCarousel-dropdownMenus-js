@@ -1,11 +1,11 @@
 import "./styles.css";
 import { greeting } from "./home.js";
 
-
+//display corousel
 let picIndex = 0;
-showSlides();
+showPics();
 
-function showSlides() {
+function showPics() {
   let i;
   let pics = document.querySelectorAll(".picFade");
 
@@ -17,8 +17,17 @@ function showSlides() {
 
   if (picIndex > pics.length) {picIndex = 1}
   pics[picIndex-1].style.display = "block";
-  setTimeout(showSlides, 2500);
+  setTimeout(showPics, 3000);
 }
 
+//display drop down menu
+document.querySelector("#dropButton").addEventListener("click", () =>{
+    const dropMenu = document.querySelector(".dropMenu");
+
+    if (dropMenu.style.display === "grid"){
+        dropMenu.style.display = "none";
+    }
+    else { dropMenu.style.display = "grid"};
+});
 
 
