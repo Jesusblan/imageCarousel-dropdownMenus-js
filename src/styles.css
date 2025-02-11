@@ -1,3 +1,16 @@
 body{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
 }
+header{
+    background-color: rgb(119, 201, 113);
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 130px 3fr 1fr;
+}
+    svg{
+        fill: white;
+    }
