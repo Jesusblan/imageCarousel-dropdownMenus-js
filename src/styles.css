@@ -1,16 +1,44 @@
 body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
+    font-size: 16px;
 }
 header{
-    background-color: rgb(119, 201, 113);
+    background-color: rgb(81, 154, 76);
     height: 150px;
     width: 100%;
-    justify-content: center;
+    width: 1200px;
+    align-items: center;
+    justify-items: center;
 
     display: grid;
-    grid-template-columns: 130px 3fr 1fr;
+    grid-template-columns: 130px 550px 1fr;
 }
     svg{
         fill: white;
+    }
+    header h2{
+        color: white;
+        font-size: 1.6rem;
+    }
+
+.carousel{
+background-color: rgb(100, 76, 76);
+width: 1200px;
+justify-items: center;
+
+}
+    .photoFade{
+        background-color: rgb(100, 76, 76);
+        justify-items: center;
+        width: 700px;
+    }
+    .photoName{
+        font-size: 1.4rem;
+        color: white;
+    }
+    .photoNumber{
+        position: absolute;
+        bottom: 15px;
+        left: 62.5%;
     }
