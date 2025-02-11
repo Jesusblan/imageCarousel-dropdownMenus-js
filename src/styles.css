@@ -2,6 +2,8 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
     font-size: 16px;
+    background-color: rgb(100, 76, 76);
+    width: 1200px;
 }
 header{
     background-color: rgb(81, 154, 76);
@@ -25,20 +27,21 @@ header{
 .carousel{
 background-color: rgb(100, 76, 76);
 width: 1200px;
+height: 100%;
 justify-items: center;
 
 }
-    .photoFade{
+    .picFade{
         background-color: rgb(100, 76, 76);
         justify-items: center;
         width: 700px;
     }
-    .photoName{
+    .picName{
         font-size: 1.4rem;
         color: white;
     }
-    .photoNumber{
+    .picNumber{
         position: absolute;
         bottom: 15px;
-        left: 62.5%;
+        left: 49%;
     }
