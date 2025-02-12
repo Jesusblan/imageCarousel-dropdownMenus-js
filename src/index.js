@@ -6,13 +6,12 @@ let picIndex = 0;
 
 //display animals
 
-showAnimals();
+showCarousel();
 document.querySelector("#animals").addEventListener("click", () =>{
-    
-    showAnimals();
+location.reload();
 });
 
-function showAnimals() {
+function showCarousel() {
     let i;
     let pics = document.querySelectorAll(".animalPic");
 
@@ -24,7 +23,7 @@ function showAnimals() {
 
     if (picIndex > pics.length) {picIndex = 1}
     pics[picIndex-1].style.display = "block";
-    setTimeout(showAnimals, 3000);
+    setTimeout(showCarousel, 3000);
 }
 
 //display drop down menu
