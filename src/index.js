@@ -1,23 +1,30 @@
 import "./styles.css";
 import { greeting } from "./home.js";
 
-//display corousel
+
 let picIndex = 0;
-showPics();
 
-function showPics() {
-  let i;
-  let pics = document.querySelectorAll(".picFade");
+//display animals
 
-  for (i = 0; i < pics.length; i++) {
-    pics[i].style.display = "none";
-  }
+showAnimals();
+document.querySelector("#animals").addEventListener("click", () =>{
+    
+    showAnimals();
+});
 
-  picIndex++;
+function showAnimals() {
+    let i;
+    let pics = document.querySelectorAll(".animalPic");
 
-  if (picIndex > pics.length) {picIndex = 1}
-  pics[picIndex-1].style.display = "block";
-  setTimeout(showPics, 3000);
+    for (i = 0; i < pics.length; i++) {
+        pics[i].style.display = "none";
+    }
+
+    picIndex++;
+
+    if (picIndex > pics.length) {picIndex = 1}
+    pics[picIndex-1].style.display = "block";
+    setTimeout(showAnimals, 3000);
 }
 
 //display drop down menu
@@ -31,3 +38,9 @@ document.querySelector("#dropButton").addEventListener("click", () =>{
 });
 
 
+//display plants
+
+document.querySelector("#plants").addEventListener("click", () =>{
+    const container = document.querySelector(".carousel");
+    container.innerHTML = "";
+})
